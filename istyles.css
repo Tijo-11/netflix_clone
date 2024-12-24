@@ -1,137 +1,147 @@
 *{
-    color: white;
+  color: white;
 }
 
 /* Navbar styling for better visibility */
 .navbar{
-    display: flex;
+  display: flex;
 }
 .navbar-brand{
-    max-width: 150px;
+  max-width: 150px;
 }
 .navbar-dark .navbar-nav .nav-link {
-    color: white;
-  }
-  
-  .navbar-dark .navbar-nav .nav-link:hover {
-    color: #e50914; /* Netflix red on hover */
-  }
-  
-  .navbar-dark .navbar-brand img {
-    height: 40px;
-  }
-  
-  /* Custom Button */
-  .btn-danger {
-    background-color: #e50914; /* Netflix red */
-    border-color: #e50914;
-  }
-  
-  .btn-danger:hover {
-    background-color: #f40612;
-    border-color: #f40612;
-  }
-  /**Main styling**/
-  .main {
-    width: 100%;
-    height: 100vh;
-    background-image: url("assets/Background.jpeg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    position: relative; /* Ensure proper positioning for the overlay */
+  color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #e50914; /* Netflix red on hover */
+}
+
+.navbar-dark .navbar-brand img {
+  height: 40px;
+}
+
+/* Custom Button */
+.btn-danger {
+  background-color: #e50914; /* Netflix red */
+  border-color: #e50914;
+}
+
+.btn-danger:hover {
+  background-color: #f40612;
+  border-color: #f40612;
+}
+/**Main styling**/
+.main {
+  width: 100%;
+  height: 100vh;
+  background-image: url("assets/Background.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  position: relative; /* Ensure proper positioning for the overlay */
 }
 .main::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity for desired darkness */
-    z-index: 1; /* Places the overlay below the content */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity for desired darkness */
+  z-index: 1; /* Places the overlay below the content */
 }
 /* Ensures content inside .main is above the overlay */
 .main * {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 }
-  #navbarDropdown{
-    border: 2px solid white;
-    padding: 5px;
-    margin: 6px;
-  }
-  #signIn{
-    border: none;
-    padding:0px;
-    margin:6px;
-    border-radius: 8px;
-  }
-  .mainHeading {
-    margin-top: 100px;
-    height: 300px;
-    width: 50vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end; /* Align items to the bottom on larger screens */
-    align-items: center;
-    align-self: center;
-    position: relative;
-    box-sizing: border-box;
-    /* Allow content to wrap when needed */
-    flex-wrap: wrap;
+#navbarDropdown{
+  border: 2px solid white;
+  padding: 5px;
+  margin: 6px;
+}
+#signIn{
+  border: none;
+  padding:0px;
+  margin:6px;
+  border-radius: 8px;
+}
+.mainHeading {
+  margin-top: 100px;
+  height: 300px;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align items to the bottom on larger screens */
+  align-items: center;
+  align-self: center;
+  position: relative;
+  box-sizing: border-box;
+  /* Allow content to wrap when needed */
+  flex-wrap: wrap;
 }
 
-/* Media query for screens 768px and below (mobile screens) */
-@media (max-width: 768px) {
-    .mainHeading {
-        justify-content: center; /* Center the content vertically on mobile screens */
-        height: auto; /* Allow height to adjust automatically */
-        width: 100%;
-        margin: 0;
-        margin-top: 100px;
-        padding: 0 10px; /* Padding to add space on the left and right */
-        box-sizing: border-box;
-        /* Allow child elements to wrap on smaller screens */
-        flex-wrap: wrap;
-    }
 
-}
 
 
 .mainHeading h1{
-  text-align: center;
-  font-weight: 800;
+text-align: center;
+font-weight: 800;
 }
 .main-search{
-  width:100%;
-  display: flex;
-  justify-content: space space-evenly;
-  padding:0%;
-  margin:0%;
+width:100%;
+display: flex;
+justify-content: space space-evenly;
+padding:0%;
+margin:0%;
 }
 .main-search-sub{
-  width: 400px;
-  border: 2px solid white;
-  height: 55px;
-  border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.1); /* Adds a semi-transparent background */
-  color: white; /* Ensures text inside is readable */
-  padding: 10px; /* Adds padding for better aesthetics */
-  font-size: 16px; /* Adjust text size */
-  margin-right: 10px;
+width: 400px;
+border: 2px solid white;
+height: 55px;
+border-radius: 8px;
+background-color: rgba(255, 255, 255, 0.1); /* Adds a semi-transparent background */
+color: white; /* Ensures text inside is readable */
+padding: 10px; /* Adds padding for better aesthetics */
+font-size: 16px; /* Adjust text size */
+margin-right: 10px;
 }
 .main-btn{
-  background-color: red;
-  color: white;
-  font-weight: 400;
-  border: 2px solid red;
-  width: 200px;
-  height: 55px;
-  border-radius: 8px;
+background-color: red;
+color: white;
+font-weight: 400;
+border: 2px solid red;
+width: 200px;
+height: 55px;
+border-radius: 8px;
 }
+/* Media query for screens 768px and below (mobile screens) */
+@media (max-width: 768px) {
+  .mainHeading {
+      justify-content: center; /* Center the content vertically on mobile screens */
+      height: auto; /* Allow height to adjust automatically */
+      width: 100%;
+      margin: 0;
+      margin-top: 100px;
+      padding: 0 10px; /* Padding to add space on the left and right */
+      box-sizing: border-box;
+      /* Allow child elements to wrap on smaller screens */
+      flex-wrap: wrap;
+  }
+  .main-search {
+    display: flex; /* Ensure flex display is applied */
+    flex-wrap: wrap; /* Allow the items to wrap onto multiple rows */
+    justify-content: center; /* Center the items horizontally */
+    padding: 10px; /* Add padding for mobile */
+  }
+  .main-search-sub {
+    height: 40px;
+  }
+  .main-btn {
+    height: 40px;
+    margin-top: 20px; /* Add margin-top for mobile screens */
+  }
 
-
- 
-  
+}
