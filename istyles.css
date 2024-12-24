@@ -117,25 +117,35 @@ width: 200px;
 height: 55px;
 border-radius: 8px;
 }
-.fourBoxesHeading{
+.fourBoxesheading{
+  background-color:black;
   height: 20px;
   width: 100%;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-left: 10%;
+  padding-top: 5px;
+  padding-bottom: 30px;
 }
-.fourBoxes{
-  height:250px;
-  width: 100%;
+.fourBoxes {
+  width: 80%;
   background-color: black;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 5px;
+  padding: 10px;
+  margin: 0 auto; /* Center the container horizontally */
+  box-sizing: border-box;
 }
+
 .box{
-  width: 22%;
-  height450px;
+  width: 19%;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(34, 34, 209);
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 10px;
 }
 .partition-heading h3{
   color: white;
@@ -146,6 +156,11 @@ border-radius: 8px;
   color: white;
   font-size: large;
   font-weight: 400;
+}
+.partition-image{
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 /* Media query for screens 768px and below (mobile screens)****
@@ -163,19 +178,36 @@ border-radius: 8px;
       /* Allow child elements to wrap on smaller screens */
       flex-wrap: wrap;
   }
+  
   .main-search {
     display: flex; /* Ensure flex display is applied */
     flex-wrap: wrap; /* Allow the items to wrap onto multiple rows */
     justify-content: center; /* Center the items horizontally */
     padding: 10px; /* Add padding for mobile */
   }
+
   .main-search-sub {
     height: 40px;
-    border:1px solid white;
+    border: 1px solid white;
   }
+
   .main-btn {
     height: 40px;
     margin-top: 20px; /* Add margin-top for mobile screens */
   }
-}
 
+  .fourBoxes {
+    flex-direction: column; /* Stack the boxes vertically */
+    align-items: center;    /* Center the boxes horizontally */
+    width: 100%;            /* Ensure the container takes full width */
+    padding: 10px;          /* Add padding to avoid the boxes touching edges */
+    box-sizing: border-box; /* Ensure padding is considered in width */
+  }
+
+  .box {
+    width: 80%;          /* Ensure the boxes take up most of the width */
+    margin-bottom: 10px;    /* Space between the boxes */
+    box-sizing: border-box; /* Include padding and borders in width calculation */
+    text-align: center;     /* Center text or content within each box */
+  }
+}
