@@ -117,7 +117,40 @@ width: 200px;
 height: 55px;
 border-radius: 8px;
 }
-/* Media query for screens 768px and below (mobile screens) */
+.fourBoxesHeading{
+  height: 20px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.fourBoxes{
+  height:250px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.box{
+  width: 22%;
+  height450px;
+}
+.partition-heading h3{
+  color: white;
+  font-size: x-large;
+  font-weight: 900;
+}
+.partition-heading p{
+  color: white;
+  font-size: large;
+  font-weight: 400;
+}
+
+/* Media query for screens 768px and below (mobile screens)****
+******************************************************************************
+**********************************************************************************/
 @media (max-width: 768px) {
   .mainHeading {
       justify-content: center; /* Center the content vertically on mobile screens */
@@ -138,10 +171,11 @@ border-radius: 8px;
   }
   .main-search-sub {
     height: 40px;
+    border:1px solid white;
   }
   .main-btn {
     height: 40px;
     margin-top: 20px; /* Add margin-top for mobile screens */
   }
-
 }
+
