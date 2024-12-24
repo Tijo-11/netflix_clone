@@ -162,6 +162,71 @@ border-radius: 8px;
   bottom: 0;
   right: 0;
 }
+.footer{
+  display: flex;
+}
+.FAQ{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  height: 90vh; 
+  margin-top: 100px;
+} 
+.btn-faq{ 
+  background-color: #434343; 
+  width: 80%; /* Set button width to 80% of the parent */ 
+  padding: 15px; /* Add padding for the button */ 
+  font-size: 18px; /* Increase font size for better visibility */ 
+  border: none; /* Remove default border */ 
+  border-radius: 8px; /* Add rounded corners */ 
+  color: white; /* Set text color */ 
+  cursor: pointer; /* Change cursor on hover */ 
+  text-align: center; /* Center text within the button */ 
+  text-decoration: none; /* Remove default link underline */ 
+  display: block; /* Make the anchor element behave like a block-level element */ 
+  margin: 10px auto; /* Center the button and add margin for spacing */
+ } 
+ .card-body1{ 
+  width: 40vw; 
+  border-radius: 0%; 
+} 
+.card{ 
+  background-color: #434343 !important; 
+  color: #fff !important; 
+  padding: 5px; 
+  margin: 5px;
+ } 
+ .faq p{ 
+  color: white; 
+} 
+.readyToWatch{
+  margin-top: 10px;
+  height: 300px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align items to the bottom on larger screens */
+  align-items: center;
+  align-self: center;
+  box-sizing: border-box;
+  flex-wrap: wrap;/* Allow content to wrap when needed */
+}
+.main-search2{
+  width: 50%;
+}
+.questions{
+  height: 20px;
+  margin-top: 10px;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-left: 12%;
+}
+.footer{
+  margin-left: 12%;
+
+}
+
 
 /* Media query for screens 768px and below (mobile screens)****
 ******************************************************************************
@@ -209,5 +274,8 @@ border-radius: 8px;
     margin-bottom: 10px;    /* Space between the boxes */
     box-sizing: border-box; /* Include padding and borders in width calculation */
     text-align: center;     /* Center text or content within each box */
+  }
+  .footer{
+    display: block;
   }
 }
